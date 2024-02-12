@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- import font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+    <!-- import stylesheet -->
+    <link rel="stylesheet" href="style.css">
+    <title>IoT Plant Monitor</title>
+</head>
+
+<body>
+    <header class="header"> 
+        <h1>IoT Plant Monitor</h1>
+        <div class="connect_box">
+            <input type="text" id="ipaAddress" placeholder="IP Address" value="192.168">
+            <button class="connect_button">Connect</button>
+        </div>
+    </header>
+    <section>
+        <div class="sensor_values" id="lightValue">Light Level: </div>
+        <div class="sensor_values" id="soilMoistValue">Soil Moisture Level: </div>
+        <div class="sensor_values" id="soilTempValue">Soil Temperature Level: </div>
+        <div class="sensor_values" id="airHumidValue">Air Humidity Level: </div>
+        <div class="sensor_values" id="airTempValue">Air Temperature Level: </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
